@@ -21,14 +21,6 @@
     <module>webapp</module>
   </modules>
 
-  
-<distributionManagement>
-<repository>
- <id>releases</id>
- <url>http://localhost:8081/nexus/content/repositories/releases</url>
- </repository>
-</distributionManagement>
-
   <build>
     <plugins>
       <plugin>
