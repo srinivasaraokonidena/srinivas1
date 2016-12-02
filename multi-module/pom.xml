@@ -21,13 +21,13 @@
     <module>webapp</module>
   </modules>
 
-  <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/multi-module-site</url>
-    </site>
-  </distributionManagement>
+  
+<distributionManagement>
+<repository>
+ <id>releases</id>
+ <url>http://localhost:8081/nexus/content/repositories/releases</url>
+ </repository>
+</distributionManagement>
 
   <build>
     <plugins>
