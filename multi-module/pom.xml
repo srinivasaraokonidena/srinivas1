@@ -75,6 +75,10 @@
             <plugin>
             <artifactId>maven-deploy-plugin</artifactId>
             </plugin>
+            
+            <plugin>
+            <artifactId>maven-install-plugin</artifactId>
+            </plugin>
            
 
             <plugin>
