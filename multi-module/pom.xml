@@ -71,14 +71,19 @@
             <plugin>
               <artifactId>maven-clean-plugin</artifactId>
             </plugin>
+             
+            <plugin>
+            <artifactId>maven-install-plugin</artifactId>
+            <configuration>
+             <autoVersionSubmodules>true</autoVersionSubmodules>
+           </configuration>
+            </plugin>
 
             <plugin>
             <artifactId>maven-deploy-plugin</artifactId>
             </plugin>
             
-            <plugin>
-            <artifactId>maven-install-plugin</artifactId>
-            </plugin>
+            
            
 
             <plugin>
