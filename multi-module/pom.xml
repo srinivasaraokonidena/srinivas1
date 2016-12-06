@@ -10,12 +10,6 @@
   <name>Multi Module Project Parent</name>
   <description>Sample multi module Maven project with a working, deployable site.</description>
   <url>http://www.example.com</url>
-<distributionManagement>
-  <repository>
-    <id>releases</id>
-    <url>http://localhost:8081/nexus/content/repositories/releases</url>
-  </repository>
-</distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
@@ -26,6 +20,13 @@
     <module>server</module>
     <module>webapp</module>
   </modules>
+
+  <distributionManagement>
+  <repository>
+    <id>releases</id>
+    <url>http://localhost:8081/nexus/content/repositories/releases</url>
+  </repository>
+</distributionManagement>
 
   <build>
     <plugins>
@@ -44,8 +45,6 @@
         </configuration>
       </plugin>
 
-   
-
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
         <configuration>
@@ -53,9 +52,6 @@
             <plugin>
               <artifactId>maven-checkstyle-plugin</artifactId>
             </plugin>
-
-         
-
 
             <plugin>
               <artifactId>maven-jxr-plugin</artifactId>
@@ -72,24 +68,13 @@
             <plugin>
               <artifactId>maven-surefire-report-plugin</artifactId>
             </plugin>
-
-           
-           
+             <plugin>
+            <artifactId>maven-clean-plugin</artifactId>
             </plugin>
-             
             <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>maven-install-plugin</artifactId>
-            <version>2.4</version>
-           
+              <artifactId>maven-deploy-plugin</artifactId>
             </plugin>
-
-            <plugin>
-            <artifactId>maven-deploy-plugin</artifactId>
-            </plugin>
-            
-            
-           
+              
 
             <plugin>
               <groupId>org.codehaus.mojo</groupId>
@@ -191,8 +176,6 @@
         <version>2.5</version>
       </dependency>
 
-
-
       <dependency>
         <groupId>javax.servlet.jsp</groupId>
         <artifactId>jsp-api</artifactId>
@@ -230,10 +213,10 @@
   </dependencyManagement>
 
   <scm>
-    <connection>scm:git:git@github.com:srinivasaraokonidena/srinivas1.git</connection>
-    <developerConnection>scm:git:git@github.com:srinivasaraokonidena/srinivas1.git</developerConnection>
+    <connection>scm:git:git@github.com:gabrielf/maven-samples.git</connection>
+    <developerConnection>scm:git:git@github.com:gabrielf/maven-samples.git</developerConnection>
     <tag>HEAD</tag>
-    <url>https://github.com/srinivasaraokonidena/srinivas1.git</url>
+    <url>http://github.com/gabrielf/maven-samples</url>
   </scm>
 
   <prerequisites>
