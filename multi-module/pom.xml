@@ -68,9 +68,12 @@
             <plugin>
               <artifactId>maven-surefire-report-plugin</artifactId>
             </plugin>
-             <plugin>
+                  
+            <plugin>
             <artifactId>maven-clean-plugin</artifactId>
             </plugin>
+
+
             <plugin>
               <artifactId>maven-deploy-plugin</artifactId>
             </plugin>
