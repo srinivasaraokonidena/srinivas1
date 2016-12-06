@@ -10,12 +10,6 @@
   <name>Parent</name>
   <description>Just a pom that makes it easy to build both projects at the same time.</description>
 
-<distributionManagement>
-  <repository>
-    <id>releases</id>
-    <url>http://localhost:8081/nexus/content/repositories/releases</url>
-  </repository>
-</distributionManagement>
 
   <modules>
     <module>multi-module</module>
@@ -25,6 +19,14 @@
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
+
+<distributionManagement>
+  <repository>
+    <id>releases</id>
+    <url>http://localhost:8081/nexus/content/repositories/releases</url>
+  </repository>
+</distributionManagement>
+
 
 
 </project>
