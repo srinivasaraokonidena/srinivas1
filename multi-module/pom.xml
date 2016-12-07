@@ -71,9 +71,6 @@
                   
            
 
-            <plugin>
-              <artifactId>maven-deploy-plugin</artifactId>
-            </plugin>
               
 
             <plugin>
@@ -110,6 +107,11 @@
             <artifactId>maven-install-plugin</artifactId>
             <version>2.4</version>
            </plugin>
+          
+            <plugin>
+              <artifactId>maven-deploy-plugin</artifactId>
+              <version>2.7</version>
+            </plugin>
 
 
         <plugin>
