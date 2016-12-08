@@ -21,11 +21,11 @@
     <module>webapp</module>
   </modules>
 
-  <distributionManagement>
-  <repository>
-    <id>Releases</id>
-    <url>http://localhost:8081/nexus/content/repositories/releases/</url>
-  </repository>
+<distributionManagement>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
 </distributionManagement>
 
   <build>
@@ -225,6 +225,22 @@
         <version>1.8.5</version>
         <scope>test</scope>
       </dependency>
+
+ <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+      <version>3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.sonatype.aether</groupId>
+      <artifactId>aether-api</artifactId>
+      <version>1.8</version>
+    </dependency>
+    <dependency>
+      <groupId>org.sonatype.aether</groupId>
+      <artifactId>aether-util</artifactId>
+      <version>1.8</version>
+    </dependency>
     </dependencies>
   </dependencyManagement>
 

@@ -10,6 +10,13 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
 
+<distributionManagement>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
+</distributionManagement>
+
   <artifactId>server</artifactId>
   <packaging>jar</packaging>
   <name>Server</name>
